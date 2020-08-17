@@ -1,5 +1,5 @@
 //Hides elements that will show once the first search goes through.
-$(".current-box").hide();
+$(".jumbotron").hide();
 $(".forecast-banner").hide();
 var forecastdisplay;
 
@@ -48,7 +48,7 @@ $(".search").on("click", function() {
         console.log(response);
         $(".prev-list").prepend("<button class='prev-city mt-1'>" + subject + "</button>");
         localStorage.setItem(subject, subject);
-        $(".current-box").show();
+        $(".jumbotron").show();
         $(".forecast-banner").show();
         var iconcode = response.weather[0].icon;
         var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";

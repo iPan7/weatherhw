@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherHw</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<navbar>Weather Dashboard</navbar>
+<div class="title">Weather Dashboard</div>
 
 <div class="container">
         <div class="col-4">
-            Search for a city
+            <h2>Search for a city</h2>
             <div>
                 <input class="subject" placeholder="Enter a City"></input>
                 <button class="search">Search</button>
@@ -26,6 +27,7 @@
         </div>
         <div class="col-12">
                     <div class="jumbotron">
+                        <img class="icon" src="" alt="Weather icon">
                         <h4 class="display-4 cityName">City Name</h4>
                         <p class="temp">Temp</p>
                         <p class="humidity">Humidity</p>
