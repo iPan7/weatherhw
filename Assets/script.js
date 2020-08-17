@@ -65,7 +65,29 @@ $(".search").on("click", function() {
             url: queryURL,
             method: "GET"
         }).then(function(response){
-            $(".uvIndex").text("UV Index: " + response[0].value);
+            let curntUv = response[0].value;
+
+            if (curntUv > 0.01 & curntUv < 3) {
+                //color turn green 
+                $(".uvIndex").addClass('bg-green');
+                $(".uvIndex").text(`${"UV Index: " + curntUv}`);
+            } else if (curntUv > 3 & curntUv < 6) {
+                // color turns yellow 
+                $(".uvIndex").addClass('bg-yellow');
+                $(".uvIndex").text(`${"UV Index: " + curntUv}`);
+            } else if (curntUv > 6  & curntUv < 8) {
+                // color turns orange 
+                $(".uvIndex").addClass('bg-orange');
+                $(".uvIndex").text(`${"UV Index: " + curntUv}`);
+            } else if (curntUv > 8 & curntUv < 11) {
+                // color turns red 
+                $(".uvIndex").addClass('bg-red');
+                $(".uvIndex").text(`${"UV Index: " + curntUv}`);
+            } else if (curntUv > 11) {
+                // color turns purple 
+                $(".uvIndex").addClass('bg-extremePurple');
+                $(".uvIndex").text(`${"UV Index: " + curntUv}`);
+            }
         })
     })
 

@@ -7,3 +7,23 @@
 body {
     background-color: rgb(131, 131, 131);
 }
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-extremePurple {
+    background-color: violet;
+}
