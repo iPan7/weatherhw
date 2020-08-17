@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeatherHw</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    
+
+<navbar>Weather Dashboard</navbar>
+
+<div class="container">
+        <div class="col-4">
+            Search for a city
+            <div>
+                <input class="subject" placeholder="Enter a City"></input>
+                <button class="search">Search</button>
+            </div>
+            <h2>Previous Searches:</h2>
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush prev-list"> 
+                        <button class='clear mt-1'>Clear Results</button>
+                    </ul>
+            </div>
+        </div>
+        <div class="col-12">
+                    <div class="jumbotron">
+                        <h4 class="display-4 cityName">City Name</h4>
+                        <p class="temp">Temp</p>
+                        <p class="humidity">Humidity</p>
+                        <p class="windSpeed">Wind Speed</p>
+                        <p class="uvIndex">UV Index</p>
+                    </div>
+                <div class="row ml-1 card-group forecast-list"></div>    
+        </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Assets/script.js"></script>
 </body>
 </html>
